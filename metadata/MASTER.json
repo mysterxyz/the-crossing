@@ -1,0 +1,19 @@
+{
+  "name": "The Crossing - MASTER",
+  "description": "The Crossing completion NFT. MASTER tier - flawless completion with 0 mistakes.",
+  "image": "ipfs://bafybeia6qyt3i5gxtwibkvg5oc4php6ihxukto6aj7bw5ofbidmija6mz4",
+  "attributes": [
+    {
+      "trait_type": "Tier",
+      "value": "MASTER"
+    },
+    {
+      "trait_type": "Rank",
+      "value": "Gold"
+    },
+    {
+      "trait_type": "Mistakes",
+      "value": 0
+    }
+  ]
+}

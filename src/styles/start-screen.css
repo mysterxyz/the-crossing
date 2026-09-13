@@ -1,0 +1,89 @@
+.start-screen {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 22vh;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 420ms ease;
+}
+
+.start-screen.is-leaving {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.start-title {
+  margin: 0;
+  color: #f4f6fa;
+  font-weight: 300;
+  font-size: clamp(28px, 4.8vw, 64px);
+  letter-spacing: 0.12em;
+  text-indent: 0.12em;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.start-subtitle {
+  margin: 18px 0 0;
+  color: rgba(236, 239, 245, 0.78);
+  font-weight: 300;
+  font-size: clamp(13px, 1.55vw, 22px);
+  letter-spacing: 0.14em;
+  text-indent: 0.14em;
+  text-transform: uppercase;
+}
+
+.start-dot {
+  display: inline-block;
+  letter-spacing: 0;
+  margin-left: -0.1em;
+  margin-right: 0.06em;
+}
+
+.start-run {
+  margin-top: 36px;
+  padding: 18px 56px;
+  min-width: 240px;
+  color: #f4f6fa;
+  background: rgba(8, 12, 20, 0.78);
+  border: 1px solid rgba(232, 236, 244, 0.42);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: clamp(14px, 1.25vw, 18px);
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-indent: 0.16em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.start-run:hover,
+.start-run:focus-visible {
+  background: rgba(8, 12, 20, 0.88);
+  outline: none;
+}
+
+@media (max-width: 720px) {
+  .start-screen {
+    padding-top: 14vh;
+    padding-inline: 16px;
+  }
+
+  .start-title {
+    letter-spacing: 0.08em;
+    text-indent: 0.08em;
+  }
+
+  .start-subtitle {
+    letter-spacing: 0.08em;
+    text-indent: 0.08em;
+  }
+
+  .start-dot {
+    margin-left: -0.06em;
+  }
+}

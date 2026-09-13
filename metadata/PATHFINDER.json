@@ -1,0 +1,19 @@
+{
+  "name": "The Crossing - PATHFINDER",
+  "description": "The Crossing completion NFT. PATHFINDER tier - successful completion with 4 or more mistakes.",
+  "image": "ipfs://bafybeibn3ggv3i4rbkh4ld2dusin53xanyededuwuwqbnilmm6lfbtcg2y",
+  "attributes": [
+    {
+      "trait_type": "Tier",
+      "value": "PATHFINDER"
+    },
+    {
+      "trait_type": "Rank",
+      "value": "Bronze"
+    },
+    {
+      "trait_type": "Mistakes",
+      "value": "4+"
+    }
+  ]
+}

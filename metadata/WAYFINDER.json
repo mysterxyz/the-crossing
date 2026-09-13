@@ -1,0 +1,19 @@
+{
+  "name": "The Crossing - WAYFINDER",
+  "description": "The Crossing completion NFT. WAYFINDER tier - successful completion with 1-3 mistakes.",
+  "image": "ipfs://bafybeidziey2e75c5wp6kyj6375s45zgraupg3s6hoj5pfdr5ps7m4r6x4",
+  "attributes": [
+    {
+      "trait_type": "Tier",
+      "value": "WAYFINDER"
+    },
+    {
+      "trait_type": "Rank",
+      "value": "Silver"
+    },
+    {
+      "trait_type": "Mistakes",
+      "value": "1-3"
+    }
+  ]
+}
