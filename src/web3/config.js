@@ -5,6 +5,11 @@ function env(name) {
   return typeof value === "string" ? value.trim() : ""
 }
 
+function defaultSignUrl() {
+  if (import.meta.env.PROD) return "/api/sign-mint"
+  return "http://localhost:8787/sign-mint"
+}
+
 export const nftConfig = {
   contractAddress:
     env("VITE_NFT_CONTRACT_ADDRESS") ||
@@ -16,7 +21,7 @@ export const nftConfig = {
   explorerUrl: (
     env("VITE_EXPLORER_URL") || robinhood.blockExplorers.default.url
   ).replace(/\/$/, ""),
-  signUrl: env("VITE_MINT_SIGN_URL") || "http://localhost:8787/sign-mint",
+  signUrl: env("VITE_MINT_SIGN_URL") || defaultSignUrl(),
 }
 
 export function explorerTxUrl(hash) {
